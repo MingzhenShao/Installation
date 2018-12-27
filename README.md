@@ -1,8 +1,8 @@
 # installation
 
 ## Install Nvidia Driver, cuda, cuDnn, Anaconda, Tensorflow
-multiple CUDA 
-`
+multiple CUDA  
+```
 cd /usr/local   #cuda is a soft link
 stat cuda
 
@@ -15,4 +15,4 @@ Modify: 2018-12-27 22:38:51.621298141 +0900
 Change: 2018-12-27 22:38:51.621298141 +0900
  Birth: -
 
-`
+```
