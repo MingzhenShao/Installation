@@ -1,5 +1,16 @@
 # installation
 
+## Ubuntu Swap
+```
+free
+sudo gedit /etc/sysctl.conf
+#################################################
+# Set Swap usable availability
+#        Swap <-------> physical memory
+# default: 60%                40%
+vm.swappiness=20
+```
+
 ## Install Nvidia Driver, cuda, cuDnn, Anaconda, Tensorflow  
 Nvidia Driver can be installed by CUDA (Some times doesn't work)  
 * In this condiction, When "X server is running"  
