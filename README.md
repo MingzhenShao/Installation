@@ -1,17 +1,17 @@
 # installation
 
-## Install Nvidia Driver, cuda, cuDnn, Anaconda, Tensorflow
-Nvidia Driver can be installed by CUDA (Some times doesn't work)
-  In this condiction, When "X server is running"
+## Install Nvidia Driver, cuda, cuDnn, Anaconda, Tensorflow  
+Nvidia Driver can be installed by CUDA (Some times doesn't work)  
+  In this condiction, When "X server is running"  
   ```
   sudo service lightdm stop
   rm /tmp X*-lock
   ```
- Independent install Nvidia Driver, follow [this]()
- ATTENTION  
-  If you can not solve the nouveau problem, try -no-x-check -no-nouveau-check, the check is not necessary, in [this]()
+ Independent install Nvidia Driver, follow [this]()  
+ ATTENTION      
+  If you can not solve the nouveau problem, try -no-x-check -no-nouveau-check, the check is not necessary, in [this]()  
 
-multiple CUDA  
+multiple CUDA    
 ```
 cd /usr/local   #cuda is a soft link
 stat cuda
