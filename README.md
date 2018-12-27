@@ -2,14 +2,14 @@
 
 ## Install Nvidia Driver, cuda, cuDnn, Anaconda, Tensorflow  
 Nvidia Driver can be installed by CUDA (Some times doesn't work)  
-  In this condiction, When "X server is running"  
-  ```
-  sudo service lightdm stop
-  rm /tmp X*-lock
-  ```
+*In this condiction, When "X server is running"  
+```
+sudo service lightdm stop
+rm /tmp X*-lock
+```
  Independent install Nvidia Driver, follow [this](https://gist.github.com/wangruohui/df039f0dc434d6486f5d4d098aa52d07)  
  ATTENTION      
-  If you can not solve the nouveau problem, try -no-x-check -no-nouveau-check, the check is not necessary, in [this](https://blog.csdn.net/wangsidadehao/article/details/70255754)  
+*If you can not solve the nouveau problem, try -no-x-check -no-nouveau-check, the check is not necessary, in [this](https://blog.csdn.net/wangsidadehao/article/details/70255754)  
 
 multiple CUDA    
 ```
