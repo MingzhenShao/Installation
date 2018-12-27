@@ -10,6 +10,7 @@ sudo gedit /etc/sysctl.conf
 # default: 60%                40%
 vm.swappiness=20
 ```
+## Mount Drives without logo
 
 ## Install Nvidia Driver, cuda, cuDnn, Anaconda, Tensorflow  
 Nvidia Driver can be installed by CUDA (Some times doesn't work)  
@@ -37,4 +38,5 @@ Modify: 2018-12-27 22:38:51.621298141 +0900
 Change: 2018-12-27 22:38:51.621298141 +0900
  Birth: -
 ```  
+
 
