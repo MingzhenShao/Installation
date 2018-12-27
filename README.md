@@ -7,9 +7,9 @@ Nvidia Driver can be installed by CUDA (Some times doesn't work)
   sudo service lightdm stop
   rm /tmp X*-lock
   ```
- Independent install Nvidia Driver, follow [this]()  
+ Independent install Nvidia Driver, follow [this](https://gist.github.com/wangruohui/df039f0dc434d6486f5d4d098aa52d07)  
  ATTENTION      
-  If you can not solve the nouveau problem, try -no-x-check -no-nouveau-check, the check is not necessary, in [this]()  
+  If you can not solve the nouveau problem, try -no-x-check -no-nouveau-check, the check is not necessary, in [this](https://blog.csdn.net/wangsidadehao/article/details/70255754)  
 
 multiple CUDA    
 ```
@@ -24,6 +24,5 @@ Access: 2018-12-27 22:38:59.461332996 +0900
 Modify: 2018-12-27 22:38:51.621298141 +0900
 Change: 2018-12-27 22:38:51.621298141 +0900
  Birth: -
-
 ```  
 
