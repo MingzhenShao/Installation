@@ -10,7 +10,13 @@ $ sudo gedit /etc/sysctl.conf
 # default: 60%                40%
 vm.swappiness=20
 ```
-## Mount Drives without logo
+## Hide mounted Drives logo infiles sidebar
+Use the mount option `x-gvfs-hide` in `/etc/fstab` to hide it in nautilus, for example.
+```
+For example, a line in /etc/fstab would become:
+
+/dev/sda1 /mnt/sda1 ext4   defaults,x-gvfs-hide       0     2
+```
 
 ## Install Nvidia Driver, cuda, cuDnn, Anaconda, Tensorflow  
 Nvidia Driver can be installed by CUDA (Some times doesn't work)  
