@@ -14,13 +14,26 @@ vm.swappiness=20
 
 ## Install Nvidia Driver, cuda, cuDnn, Anaconda, Tensorflow  
 Nvidia Driver can be installed by CUDA (Some times doesn't work)  
-For a new PC 
+```
+$ sudo apt-get purge nvidia*
+# Note this might remove your cuda installation as well
+$ sudo apt-get autoremove 
+```
+For a new PC you still need `$ sudo apt-get install build-essential gcc-multilib dkms` to install the depends.  
+
 * In this condiction, When "X server is running"  
 ```
 $ sudo service lightdm stop
 $ rm /tmp X*-lock
 ```
-* Independent install Nvidia Driver, follow [this](https://gist.github.com/wangruohui/df039f0dc434d6486f5d4d098aa52d07)  
+* Add to path to `~/.bashrc`
+```
+export PATH=/usr/local/cuda/bin:${PATH}
+export LD_LIBRARY_PATH=/usr/local/cuda/bin:${LD_LIBRARY_PATH}
+```
+
+
+### Independent install Nvidia Driver, follow [this](https://gist.github.com/wangruohui/df039f0dc434d6486f5d4d098aa52d07)  
 
 `ATTENTION`      
 * If you can not solve the nouveau problem, try -no-x-check -no-nouveau-check, the check is not necessary, in [this](https://blog.csdn.net/wangsidadehao/article/details/70255754)  
@@ -48,6 +61,9 @@ $ sudo chmod a+r /usr/local/cuda/include/cudnn.h /usr/local/cuda/lib64/libcudnn*
 
 ## openCV with videoCapture
 ```
+$ pip uninstall opencv-python
+$ conda remove opencv. 
+
 $ conda install -c anaconda opencv
 ```
 
