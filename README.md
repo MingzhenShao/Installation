@@ -14,6 +14,7 @@ vm.swappiness=20
 
 ## Install Nvidia Driver, cuda, cuDnn, Anaconda, Tensorflow  
 Nvidia Driver can be installed by CUDA (Some times doesn't work)  
+For a new PC 
 * In this condiction, When "X server is running"  
 ```
 $ sudo service lightdm stop
