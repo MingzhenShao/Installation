@@ -32,7 +32,6 @@ export PATH=/usr/local/cuda/bin:${PATH}
 export LD_LIBRARY_PATH=/usr/local/cuda/bin:${LD_LIBRARY_PATH}
 ```
 
-
 ### Independent install Nvidia Driver, follow [this](https://gist.github.com/wangruohui/df039f0dc434d6486f5d4d098aa52d07)  
 
 `ATTENTION`      
@@ -67,3 +66,13 @@ $ conda remove opencv.
 $ conda install -c anaconda opencv
 ```
 
+## VS Code cannot open
+```
+$ code --verbose
+[main 20:19:26] Startup error: 
+Error: EACCES: permission denied, mkdir '/home/<user>/.config/Code/CachedData'
+
+# sure enough the folder ~/.config/Code had root access permissions for some reason. Deleted the folder using sudo.
+
+$ rm -rf /home/<user>/.config/Code 
+```
