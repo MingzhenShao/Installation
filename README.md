@@ -38,9 +38,8 @@ export PATH=/usr/local/cuda/bin:${PATH}
 export LD_LIBRARY_PATH=/usr/local/cuda/bin:${LD_LIBRARY_PATH}
 ```
 * When you update your Ubuntu system, it may cause a login loop. 
-1, check the authority of the .Xauthority `$ ls -lah` if `root` then `$ sudo chown username:username .Xauthority`.  
-
-2, If after this the login loop keeps,`reinstall the Nvidia driver`  
+1. check the authority of the .Xauthority `$ ls -lah` if `root` then `$ sudo chown username:username .Xauthority`.  
+2. If after this the login loop keeps,`reinstall the Nvidia driver`  
 * Anaconda couldn't install `check the owner of anaconda`
 
 
@@ -91,5 +90,5 @@ $ rm -rf /home/<user>/.config/Code
 ```
 * VS Code could not install extensions  
 The owner is root.  
-`$ sudo chown username:username VSCode/'
+`$ sudo chown username:username VSCode/`
 
