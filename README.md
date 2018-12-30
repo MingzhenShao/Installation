@@ -76,7 +76,8 @@ $ conda remove opencv.
 $ conda install -c anaconda opencv
 ```
 
-## VS Code cannot open
+## VS Code 
+* VS Code cannot open
 ```
 $ code --verbose
 [main 20:19:26] Startup error: 
@@ -86,3 +87,4 @@ Error: EACCES: permission denied, mkdir '/home/<user>/.config/Code/CachedData'
 
 $ rm -rf /home/<user>/.config/Code 
 ```
+* VS Code could not install extensions
