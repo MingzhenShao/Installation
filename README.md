@@ -95,3 +95,4 @@ The owner is root.
 ## exFAT in Ubuntu
 exFAT works fine in Win and MacOS, for Ubuntu,   
 `$ sudo apt install exfat-fuse exfat-utils`
+reboot to make it work. (In my case, without logout, the disk can be mount, but fail to write.)
