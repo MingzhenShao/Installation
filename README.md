@@ -92,3 +92,6 @@ $ rm -rf /home/<user>/.config/Code
 The owner is root.  
 `$ sudo chown username:username VSCode/`
 
+## exFAT in Ubuntu
+exFAT works fine in Win and MacOS, for Ubuntu,   
+`$ sudo apt install exfat-fuse exfat-utils`
