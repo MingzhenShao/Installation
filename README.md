@@ -98,6 +98,6 @@ exFAT works fine in Win and MacOS, for Ubuntu,
 reboot to make it work. (In my case, without logout, the disk can be mount, but fail to write.)
 
 ## Reproduce Keras in Tensorflow for 'Deep Image Homographt Estimation'
-When we turn the `Keras` model into normal tf Graph, with totally same parameters and setting, the Loss does NOT constringe. The prediction of our tf network is arrange in a very narrow range around 0 after thousands of training rounds, while the Keras model grows into a reasonable range(single digit)  
-When we decrease the learning rate, `Adam(lr=1e-4)`, the tf model also constringe. BUT the rate of the tf model is slow than the Keras model and the Keras also have a better monotonicity. 
-By compareing the two models, the 
+When we turn the `Keras` model into normal tf Graph, with totally same parameters and setting, the Loss does NOT constringe. The prediction of our tf network is arrange in a very narrow range around 0 after thousands of training rounds, while the Keras model grows into a reasonable range(single digit).  
+When we decrease the learning rate, `Adam(lr=1e-4)`, the tf model also constringe. BUT the rate of the tf model is slow than the Keras model and the Keras also have a better monotonicity. Still waiting for the final constringency loss difference.  
+By compareing the two models, the same model, same optimizer & learning_rate. The difference may caused by the initializer or the `model.compile`
