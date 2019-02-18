@@ -76,6 +76,16 @@ $ conda remove opencv.
 
 $ conda install -c anaconda opencv
 ```
+With the method mentioned above, we meet the problem  
+```
+The function is not implemented. Rebuild the library with Windows, GTK+ 2.x or
+Carbon support. If you are on Ubuntu or Debian, install libgtk2.0-dev and
+pkg-config, then re-run cmake or configure script
+```
+which solved by below
+```
+$ conda install -c menpo opencv=2.4.11
+```
 
 ## VS Code 
 * VS Code cannot open
