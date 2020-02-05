@@ -121,6 +121,8 @@ A Google cloud platform(GCP) based method is published here. Two types (VPN/SSR)
 ### VPN
 The Windows 10 firewall bring some troubles on both these two types. [Here](https://www.qnap.com/en/how-to/knowledge-base/article/how-to-fix-the-issue-of-windows-10-not-connecting-to-ipsecl2tp-vpn-servers/) is the setting of Registry and [here] is the setting of the firewall rule.
 * PPTP 
+
 [Here](http://www.zhoujianhui.com/2019/01/16/centos7搭建pptpvpn一键安装脚本/) is a reference for PPTP. 
 * L2TP 
+
 [Here](https://www.dazhuanlan.com/2019/12/19/5dfad25c9ac0f/) is a reference for L2PT.
