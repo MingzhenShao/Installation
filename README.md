@@ -113,3 +113,14 @@ When we decrease the learning rate, `Adam(lr=1e-4)`, the tf model also constring
 By compareing the two models, the same model, same optimizer & learning_rate. The difference may caused by the initializer or the `model.compile`
 
 **A small problem about how to update sublime `$ sudo apt-get install sublime-text`**
+
+## VPN & SSR Setting
+A Google cloud platform(GCP) based method is published here. Two types (VPN/SSR) have been tested. 
+### SSR
+[here]() is a reference for SSR. But there is a problem that the connection will be blocked after several hours and changing port number can bring the connection back for several hours. 
+### VPN
+The Windows 10 firewall bring some troubles on both these two types. [Here](https://www.qnap.com/en/how-to/knowledge-base/article/how-to-fix-the-issue-of-windows-10-not-connecting-to-ipsecl2tp-vpn-servers/) is the setting of Registry and [here] is the setting of the firewall rule.
+*PPTP 
+[Here](http://www.zhoujianhui.com/2019/01/16/centos7搭建pptpvpn一键安装脚本/) is a reference for PPTP. 
+*L2TP
+[Here](https://www.dazhuanlan.com/2019/12/19/5dfad25c9ac0f/) is a reference for L2PT.
